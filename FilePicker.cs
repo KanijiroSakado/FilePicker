@@ -158,9 +158,11 @@ namespace sakado
 
         public string GetAnotherFile()
         {
+            if (Files.Length == 0) return null;
             return Files[Global.RND.Next(0, Files.Length)];
         }
     }
 
 
 }
+
